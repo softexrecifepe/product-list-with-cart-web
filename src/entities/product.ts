@@ -13,4 +13,8 @@ export class Product {
     this._price = price;
     this._imageUrl = imageUrl;
   }
+
+  get price() {
+    return this._price;
+  }
 }
