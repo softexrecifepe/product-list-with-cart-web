@@ -8,12 +8,12 @@ import data from "../data.json";
 import { Cart } from "./entities/cart";
 
 const product1 = new Product("Banana", "Fruta", 10, "http://example.com");
-const product2 = new Product("Mamão", "Fruta", 5, "http://example.com");
+product1.incrementQuantity();
+product1.incrementQuantity();
+product1.incrementQuantity();
 
-const cart = new Cart();
+const product2 = new Product("Maçã", "Fruta", 5, "http://example.com");
+product2.incrementQuantity();
+product2.incrementQuantity();
 
-cart.addToCart(product1);
-cart.addToCart(product1);
-console.log(cart);
-console.log(cart.products.length);
-console.log(cart.total);
+console.log(Cart);
