@@ -17,6 +17,14 @@ export class Product {
     this._imageUrl = imageUrl;
   }
 
+  get id() {
+    return this._id;
+  }
+
+  get quantity() {
+    return this._quantity;
+  }
+
   get total() {
     return this._total;
   }
@@ -35,6 +43,7 @@ export class Product {
   decrementQuantity() {
     this._quantity--;
     this.calculateTotal();
+    // TODO: remover o produto do carrinho se a quantidade for 0
   }
 
   get price() {
