@@ -13,21 +13,52 @@
 </head>
 
 <body>
-  <main class="p-20">
-    <!-- componente `Product` -->
-    <div class="rounded-xl overflow-hidden flex flex-col border border-black h-[270px] w-[250px]">
-      <div class="mb-10 relative h-full bg-red-500">
-        <div class="">img</div>
-        <button type="button" class="button rounded-lg text-white font-medium text-xs bg-red-400">Add to Cart</button>
-      </div>
+  <main class="p-20 flex justify-between">
+    <!-- componente `Product List` -->
+    <ul id="product-list" class="grid grid-cols-3 gap-10">
+      <!-- componente `Product` -->
+      <!-- <li>
+        <div class="rounded-xl overflow-hidden flex flex-col border border-black h-[270px] w-[250px]">
+          <div class="mb-10 relative h-full bg-red-500">
+            <div class="">img</div>
+            <button type="button" class="button rounded-lg text-white font-medium text-xs bg-red-400">Add to
+              Cart</button>
+          </div>
 
-      <div class="flex flex-col">
-        <span class="product-category">Fruta</span>
-        <span class="product-name text-xl font-medium">Banana</span>
-        <span class="product-price">$6.50</span>
+          <div class="flex flex-col">
+            <span class="product-category">Fruta</span>
+            <span class="product-name text-xl font-medium">Banana</span>
+            <span class="product-price">$6.50</span>
+          </div>
+        </div>
+      </li> -->
+    </ul>
+
+    <!-- componente `Cart` -->
+    <div class="flex flex-col h-fit border border-black p-12">
+      <h2>Your Cart (7)</h2>
+      <ul>
+        <li>
+          <span>1x</span>
+          <span>@$5.50</span>
+          <span>$5.50</span>
+        </li>
+        <li>
+          <span>1x</span>
+          <span>@$5.50</span>
+          <span>$5.50</span>
+        </li>
+      </ul>
+
+      <div>
+        <span>Order Total</span>
+        <span>$46.50</span>
       </div>
     </div>
+
   </main>
+
+  <script type="module" src="./src/app.ts"></script>
 
 </body>
 

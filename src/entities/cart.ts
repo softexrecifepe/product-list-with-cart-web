@@ -29,6 +29,7 @@ export class Cart {
     }
 
     this.calculateTotal();
+    console.log(Cart._products);
   }
 
   static get products() {
