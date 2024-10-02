@@ -55,6 +55,10 @@ export class Product {
     return this._id;
   }
 
+  get name() {
+    return this._name;
+  }
+
   get quantity() {
     return this._quantity;
   }
