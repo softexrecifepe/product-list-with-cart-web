@@ -1,4 +1,4 @@
-@use "_variables";
+@import "./_variables.scss";
 
 .product-name {
   font-weight: 600;
@@ -13,4 +13,14 @@
 .product-price {
   color: $primary-color;
   font-weight: 700;
+}
+
+.button {
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: $text-color-1;
+  border-color: $text-color-1;
 }

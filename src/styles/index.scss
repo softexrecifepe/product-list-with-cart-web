@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-// @use "_components";
+@import "./_components.scss";
 
 @font-face {
   font-family: "Red Hat Text";
@@ -21,14 +21,6 @@
   height: 250px;
   background-color: grey;
   position: relative;
-}
-
-.button {
-  padding: 15px 20px;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, 50%);
 }
 
 body {
