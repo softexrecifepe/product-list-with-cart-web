@@ -48,33 +48,44 @@ export class Cart {
     totalQuantityHTML.textContent = this._totalQuantity.toString();
 
     let ulProductsHTML = cartContainerHTML.querySelector("ul");
+    let orderTotalContainerHTML = cartContainerHTML.querySelector(
+      "#order-total-container"
+    );
 
-    if (ulProductsHTML) {
+    if (ulProductsHTML && orderTotalContainerHTML) {
       ulProductsHTML.innerHTML = "";
+      orderTotalContainerHTML.innerHTML = "";
     } else {
       ulProductsHTML = document.createElement("ul");
+      orderTotalContainerHTML = document.createElement("div");
     }
 
     for (const product of this._products) {
       const liProductHTML = document.createElement("li");
 
       const productHTML = `
-        <span>${product.name}</span>
-        <div>
-          <span>${product.quantity}x</span>
-          <span>@$${product.price}</span>
-          <span>$${product.total}</span>
-        </div>
+        <li class="border-b py-2 flex flex-col gap-1">
+          <span class="product-name">${product.name}</span>
+          <div class="flex gap-2">
+            <span class="product-price text-sm">${product.quantity}x</span>
+            <span class="product-category">@$${product.price}</span>
+            <span class="product-name">$${product.total}</span>
+          </div>
+        </li>
       `;
 
       liProductHTML.innerHTML = productHTML;
       ulProductsHTML.appendChild(liProductHTML);
     }
 
-    const div = document.createElement("div");
-    div.innerHTML = `${this._orderTotal}`;
+    orderTotalContainerHTML.classList.add("mt-6");
+    orderTotalContainerHTML.innerHTML = `
+      <span class="product-name !font-normal">Order Total</span>
+      <span class="product-name text-2xl font-bold">$${this._orderTotal}</span>
+    `;
+
     cartContainerHTML.appendChild(ulProductsHTML);
-    cartContainerHTML.appendChild(div);
+    cartContainerHTML.appendChild(orderTotalContainerHTML);
   }
 
   static get products() {

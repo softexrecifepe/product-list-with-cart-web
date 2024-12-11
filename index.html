@@ -20,21 +20,6 @@
       <!-- componente `Product List` -->
       <ul id="product-list" class="flex flex-col gap-6 items-center xl:grid xl:grid-cols-3 xl:gap-8">
         <!-- componente `Product` -->
-        <!-- <li>
-        <div class="rounded-xl overflow-hidden flex flex-col border border-black h-[270px] w-[250px]">
-          <div class="mb-10 relative h-full bg-red-500">
-            <div class="">img</div>
-            <button type="button" class="button rounded-lg text-white font-medium text-xs bg-red-400">Add to
-              Cart</button>
-          </div>
-
-          <div class="flex flex-col">
-            <span class="product-category">Fruta</span>
-            <span class="product-name text-xl font-medium">Banana</span>
-            <span class="product-price">$6.50</span>
-          </div>
-        </div>
-      </li> -->
       </ul>
     </div>
 
@@ -42,28 +27,11 @@
     <div id="cart-container" class="xl:w-[340px] flex flex-col h-fit rounded-xl shadow-sm bg-white px-6 py-6">
       <h2 class="product-price text-2xl mb-4">Your Cart (<span id="total-quantity-text">0</span>)</h2>
       <ul>
-        <li class="border-b py-2 flex flex-col gap-1">
-          <span class="product-name">Classic Tiramisu</span>
-          <div>
-            <span class="product-price text-sm">1x</span>
-            <span class="product-category">@$5.50</span>
-            <span class="product-name">$5.50</span>
-          </div>
-        </li>
-        <li class="border-b py-2 flex flex-col gap-1">
-          <span class="product-name">Classic Tiramisu</span>
-          <div>
-            <span class="product-price text-sm">1x</span>
-            <span class="product-category">@$5.50</span>
-            <span class="product-name">$5.50</span>
-          </div>
-        </li>
-
+        <div class="product-category text-center font-bold !text-xs">Your added items will appear here</div>
       </ul>
 
-      <div class="flex items-center justify-between mt-6">
-        <span class="product-name !font-normal">Order Total</span>
-        <span class="product-name text-2xl font-bold">$46.50</span>
+      <div id="order-total-container" class="flex items-center justify-between">
+        <!-- componente `Order Total` -->
       </div>
     </div>
 
