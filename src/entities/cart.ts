@@ -71,7 +71,10 @@ export class Cart {
       ulProductsHTML.appendChild(liProductHTML);
     }
 
+    const div = document.createElement("div");
+    div.innerHTML = `${this._orderTotal}`;
     cartContainerHTML.appendChild(ulProductsHTML);
+    cartContainerHTML.appendChild(div);
   }
 
   static get products() {
