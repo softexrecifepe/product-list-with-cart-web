@@ -1,6 +1,8 @@
 # Product list with cart web
 
-Este é um projeto de loja virtual desenvolvido com Vite e TypeScript, com o objetivo de aprimorar as seguintes habilidades:
+Este é um projeto de loja virtual desenvolvido com Vite e TypeScript, proposto como desafio pelo [Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d), com o objetivo de aprimorar as seguintes habilidades:
+
+Este é um projeto de loja virtual desenvolvido com Vite e TypeScript proposto pelo desafio da , com o objetivo de aprimorar as seguintes habilidades:
 
 - Programação Orientada a Objetos (POO);
 - Atualização de UI (User Interface) em vários lugares utilizando HTML DOM; e
